@@ -195,6 +195,22 @@ namespace LeetCode.Solutions
             return ans;
         }
 
+        public int[] SortedSquares(int[] nums)
+        {
 
+            var x = 0;
+            var newArray = new int[nums.Length];
+
+            while (x < nums.Length)
+            {
+
+                newArray[x] = nums[x] * nums[x];
+                x++;
+            }
+
+            Array.Sort(newArray);
+
+            return newArray;
+        }
     }
 }
